@@ -68,20 +68,30 @@ const ReviewCard = ({ img, name, username, body }) => {
 
 export function Testimonial() {
     return (
-        <div className="relative flex w-full flex-col items-center justify-center overflow-hidden bg-black">
-            <Marquee pauseOnHover className="[--duration:20s]">
-                {firstRow.map((review) => (
-                    <ReviewCard key={review.username} {...review} />
-                ))}
-            </Marquee>
-            <Marquee reverse pauseOnHover className="[--duration:20s]">
-                {secondRow.map((review) => (
-                    <ReviewCard key={review.username} {...review} />
-                ))}
-            </Marquee>
-            {/* Fading gradient edges for a seamless effect */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black via-black/80 to-transparent"></div>
-        </div>
+        <>
+            <section className="container mx-auto px-4 py-32 text-center bg-[#0d0c0c]">
+                {/* Apply the font ONLY to the heading */}
+                <h1 className={`text-5xl font-bold text-white mb-20`}>
+                    Look What People Say About Us
+                </h1>
+                <div className="flex justify-center gap-4 mt-12">
+                    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+                        <Marquee pauseOnHover className="[--duration:20s]">
+                            {firstRow.map((review) => (
+                                <ReviewCard key={review.username} {...review} />
+                            ))}
+                        </Marquee>
+                        <Marquee reverse pauseOnHover className="[--duration:20s]">
+                            {secondRow.map((review) => (
+                                <ReviewCard key={review.username} {...review} />
+                            ))}
+                        </Marquee>
+                        {/* Fading gradient edges for a seamless effect */}
+                        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-[#0d0c0c] via-[#0d0c0c]/80 to-transparent"></div>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-[#0d0c0c] via-[#0d0c0c]/80 to-transparent"></div>
+                    </div>
+                </div>
+            </section>
+        </>
     );
 }
