@@ -45,9 +45,15 @@ export default function Navbar() {
                 <Button variant="ghost" className="text-gray-400 hover:text-black">
                     Docs
                 </Button>
-                <Button className="bg-gradient-to-r from-[#db2c21] to-[#ff6a00] text-black font-semibold hover:brightness-110 transition-all duration-300">
-                    Try Now
-                </Button>
+                <a
+                    href="https://marketplace.visualstudio.com/items?itemName=ShivamJainn.apix"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Button className="bg-gradient-to-r from-[#db2c21] to-[#ff6a00] text-black font-semibold hover:brightness-110 transition-all duration-300">
+                        Try Now
+                    </Button>
+                </a>
 
             </div>
         </nav>

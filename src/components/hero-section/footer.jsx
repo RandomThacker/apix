@@ -28,7 +28,7 @@ export default function Footer() {
                         <nav className="flex gap-6 text-sm mt-4 md:mt-0">
                             <Link href="https://linktr.ee/api_x" className="hover:text-white transition duration-300">Contact</Link>
                             <Link href="#" className="hover:text-white transition duration-300">Docs</Link>
-                            <Link href="#" className="hover:text-white transition duration-300">Try Now</Link>
+                            <Link href="https://marketplace.visualstudio.com/items?itemName=ShivamJainn.apix" className="hover:text-white transition duration-300">Try Now</Link>
                         </nav>
                     </div>
                     <div className="border-t border-gray-800 w-full text-center py-4">
