@@ -9,28 +9,28 @@ export function Bento() {
       <GridItem
         area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
         icon={<Box className="h-4 w-4 text-neutral-400" />}
-        title="Do things the right way"
-        description="Running out of copy so I'll write anything." />
+        title="Fast & Lightweight ⚡"
+        description="Runs so smooth, you&apos;ll forget it&apos;s even working." />
       <GridItem
         area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
         icon={<Settings className="h-4 w-4 text-neutral-400" />}
-        title="The best AI code editor ever."
-        description="Yes, it's true. I'm not even kidding. Ask my mom if you don't believe me." />
+        title="Extensible with Plugins 🔌"
+        description="Make it do exactly what you need—like an API Swiss Army knife." />
       <GridItem
         area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
         icon={<Lock className="h-4 w-4 text-neutral-400" />}
-        title="You should buy Aceternity UI Pro"
-        description="It's the best money you'll ever spend" />
+        title="Built for Developers, by Developers 🎯"
+        description="No corporate fluff, just a tool that does what it&apos;s supposed to—help you test APIs without frustration" />
       <GridItem
         area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
         icon={<Sparkles className="h-4 w-4 text-neutral-400" />}
-        title="This card is also built by Cursor"
-        description="I'm not even kidding. Ask my mom if you don't believe me." />
+        title="Works Locally, No Cloud Required 🖥"
+        description="APIX runs entirely on your machine, meaning your sensitive API data stays with you. No forced sign-ups, no tracking." />
       <GridItem
         area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
         icon={<Search className="h-4 w-4 text-neutral-400" />}
-        title="Coming soon on Aceternity UI"
-        description="I'm writing the code as I record this, no shit." />
+        title="Built for Microservices & Modern Web Apps 🌍"
+        description="Whether you&apos;re working with REST, or WebSockets, APIX adapts to your needs." />
     </ul>)
   );
 }
