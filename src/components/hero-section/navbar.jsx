@@ -1,12 +1,36 @@
-import Image from "next/image";
+"use client"
 import { Button } from "@/components/ui/button";
+import { Pixelify_Sans } from "next/font/google";
+import { useEffect, useState } from "react";
+
+const pixelifySans = Pixelify_Sans({
+    subsets: ["latin"],
+    weight: ["400", "700"],
+    display: "swap",
+});
 
 export default function Navbar() {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <nav className="absolute container mx-auto px-4 py-6 flex items-center justify-between w-full z-50 bg-black/20 backdrop-blur-sm border-b border-white/10">
+        <nav className={`fixed top-0 left-0 right-0 container mx-auto px-4 py-4 flex items-center justify-between w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/20 backdrop-blur-sm border-b border-white/10' : 'bg-transparent'
+            }`}>
             <div className="flex items-center gap-2">
-                <Image src="/placeholder.svg?height=32&width=32" alt="Logo" width={32} height={32} className="rounded-lg" />
-                <span className="text-white font-semibold">Fitela</span>
+                <p
+                    className={`text-4xl mb-4 sm:text-3xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-r from-[#db2c21] to-[#ff6a00] ${pixelifySans.className}`}
+
+                >
+                    Api-X
+                </p>
             </div>
             <div className="flex items-center gap-4">
                 <Button variant="ghost" className="text-gray-400 hover:text-white">
