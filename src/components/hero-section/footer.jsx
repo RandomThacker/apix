@@ -32,7 +32,7 @@ export default function Footer() {
                         </nav>
                     </div>
                     <div className="border-t border-gray-800 w-full text-center py-4">
-                        © 2024 Team Apix. All rights reserved. | Built with ❤️ by Aryan, Shivam, Nikith, and Shubham.
+                        © 2025 Team Apix. All rights reserved. | Built with ❤️ by Aryan, Shivam, Nikith, and Shubham.
                     </div>
                 </footer>
             </div>
