@@ -33,11 +33,17 @@ export default function Navbar() {
                 </p>
             </div>
             <div className="flex items-center gap-4">
-                <Button variant="ghost" className="text-gray-400 hover:text-white">
+                <a
+                    href="https://linktr.ee/api_x"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Button variant="ghost" className="text-gray-400 hover:text-black">
+                        Contact
+                    </Button>
+                </a>
+                <Button variant="ghost" className="text-gray-400 hover:text-black">
                     Docs
-                </Button>
-                <Button variant="ghost" className="text-gray-400 hover:text-white">
-                    Blog
                 </Button>
                 <Button className="bg-gradient-to-r from-[#db2c21] to-[#ff6a00] text-black font-semibold hover:brightness-110 transition-all duration-300">
                     Try Now
