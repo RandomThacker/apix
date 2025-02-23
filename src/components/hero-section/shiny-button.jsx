@@ -6,7 +6,7 @@ export function AnimatedShinyTextDemo() {
     return (
         <div className="z-10 flex items-center justify-center">
             <a
-                href="https://linktr.ee/api_x"
+                href="vscode:extension/ShivamJainn.apix"
                 target="_blank"
                 rel="noopener noreferrer"
             >
