@@ -46,7 +46,7 @@ export default function Navbar() {
                     Docs
                 </Button>
                 <a
-                    href="https://marketplace.visualstudio.com/items?itemName=ShivamJainn.apix"
+                    href="vscode:extension/ShivamJainn.apix"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
