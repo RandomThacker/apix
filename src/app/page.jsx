@@ -6,7 +6,7 @@ import {FeatureSection} from '@/components/feature-section/feature-section'
 
 export default function Page() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#0d0c0c]">
       <Navbar />
       <HeroSection />
       <FeatureSection />

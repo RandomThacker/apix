@@ -22,7 +22,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className={`fixed top-0 left-0 right-0 container mx-auto px-4 py-4 flex items-center justify-between w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/20 backdrop-blur-sm border-b border-white/10' : 'bg-transparent'
+        <nav className={`fixed top-0 left-0 right-0 containermx-auto px-12 py-4 flex items-center justify-between w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/20 backdrop-blur-sm border-b border-white/10' : 'bg-transparent'
             }`}>
             <div className="flex items-center gap-2">
                 <p

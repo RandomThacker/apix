@@ -36,7 +36,7 @@ export default function HeroSection() {
                 <AnimatedShinyTextDemo />
             </div>
 
-            <section className="container mx-auto px-4 py-32 text-center bg-[#0d0c0c]">
+            <section className="container mx-auto w-full px-4 py-32 text-center bg-[#0d0c0c]">
                 {/* Apply the font ONLY to the heading */}
                 <h1 className={`text-5xl font-bold text-white mb-20`}>
                     API Testing, but with Superpowers!🚀
